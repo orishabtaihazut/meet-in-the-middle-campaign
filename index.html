@@ -85,4 +85,19 @@
   </main>
 
   <footer><div class="shell footer-grid"><div><a class="logo" href="#top"><span class="logo-mark" aria-hidden="true" style="grid-row:1/3;width:33px;height:33px;border-radius:50%;background:#b9cfb5;overflow:hidden;position:relative;display:block"><img src="https://raw.githubusercontent.com/orishabtaihazut/meet-in-the-middle-campaign/main/campaign-assets/WhatsApp%20Image%202026-07-23%20at%2012.18.36.jpeg" alt="" style="position:absolute;display:block;width:118px;max-width:none;height:auto;left:-41px;top:-12px;mix-blend-mode:multiply"></span><b>נפגשים</b><i>באמצע</i></a><p>מחברים בין אנשים דרך יצירה משותפת, אמנות וקהילה.</p></div><div><b>ניווט</b><a href="#about">אודותינו</a><a href="#activities">פעילויות</a><a href="#campaign">הקמפיין</a></div><div><b>צרו קשר</b><p>hello@nifgashim.org.il<br>03-555-0142</p><a href="https://www.facebook.com/profile.php?id=61591361755795&sk=about&locale=he_IL" target="_blank" rel="noopener">Facebook - לעמוד הקמפיין</a></div></div><div class="shell credits">אדוה אורן ואורי שבתאי · קורס שיווק דיגיטלי עם בינה מלאכותית · אוניברסיטת בר-אילן</div></footer>
+  <script>
+    (() => {
+      const targets = document.querySelectorAll("main > section, .principle-grid article, .campaign-card, .strategy-grid article, .strategy-rationale article, .funnel article, .distribution-grid article, .metric-grid div");
+      if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      targets.forEach((target, index) => {
+        target.classList.add("reveal-on-scroll");
+        target.style.setProperty("--reveal-delay", `${Math.min(index % 4, 3) * 70}ms`);
+      });
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => entry.target.classList.toggle("is-visible", entry.isIntersecting));
+      }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+      targets.forEach((target) => observer.observe(target));
+    })();
+  </script>
+
 </body></html>
