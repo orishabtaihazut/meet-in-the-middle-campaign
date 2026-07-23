@@ -1,1 +1,44 @@
-<!doctype html><html lang="he" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>הרשמה למפגש | נפגשים באמצע</title><style>body{margin:0;background:#fff9ed;color:#264b45;font:18px Arial}.box{max-width:660px;margin:50px auto;padding:35px;background:#fff;border-radius:22px;box-shadow:0 10px 40px #274c4520}.back{color:#264b45;font-weight:bold}.accent{color:#df6547;font-weight:bold;margin-top:35px}h1{font-size:42px;line-height:1.1}label{font-weight:bold;display:block;margin-top:18px}input,select{font:inherit;width:100%;padding:12px;margin-top:5px;border:1px solid #b8cbc5;border-radius:8px}button{font:inherit;background:#df6547;color:#fff;font-weight:bold;border:0;border-radius:28px;padding:13px 23px;margin-top:27px;cursor:pointer}.note{font-size:14px;color:#5b6b67}</style><main class="box"><a class="back" href="../index.html#campaign">← חזרה לאתר הקמפיין</a><p class="accent">מפגש היכרות פתוח</p><h1>שעתיים של יצירה.<br>הרבה יותר מזה.</h1><p>השאירו פרטים ונחזור אליכם עם תאריך המפגש הקרוב באזורכם.</p><form onsubmit="event.preventDefault();document.getElementById('thanks').hidden=false;this.hidden=true"><label>שם מלא<input required placeholder="השם שלך"></label><label>טלפון<input required type="tel" placeholder="05X-XXXXXXX"></label><label>מה מעניין אותך?<select><option>להתנדב במפגש</option><option>להשתתף במפגש</option><option>לשמוע על רכישה או תרומה</option></select></label><button>אני רוצה להצטרף</button></form><div id="thanks" hidden><h2>איזה כיף, נתראה באמצע!</h2><p>הפרטים התקבלו. נחזור אליך בהקדם עם כל מה שצריך לדעת.</p></div><p class="note">זהו דף נחיתה לדוגמה במסגרת הקמפיין; אין איסוף פרטים בפועל.</p></main></html>
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>הרשמה למפגש | נפגשים באמצע</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Varela+Round&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#2d4036;--forest:#5c785b;--sage:#dfe9d9;--olive:#edf3e9;--paper:#fffdf9;--peach:#e58f6a;--line:#c6d5bf}
+    *{box-sizing:border-box}body{min-height:100vh;margin:0;background:linear-gradient(145deg,#f7faf4 0%,var(--olive) 55%,#e4eddc 100%);color:var(--ink);font:18px/1.6 Heebo,Arial,sans-serif}
+    .page{width:min(760px,calc(100% - 32px));margin:0 auto;padding:34px 0 56px}.back{display:inline-flex;align-items:center;gap:6px;color:#456047;font-weight:800;text-decoration:none;font-size:15px}.back:hover{text-decoration:underline}
+    .box{margin-top:24px;padding:clamp(28px,5vw,52px);background:var(--paper);border:1px solid #d7e2d0;border-radius:28px;box-shadow:0 18px 45px #4860471c}.accent{margin:0 0 10px;color:#a45e46;font-weight:800;font-size:14px;letter-spacing:.03em}
+    h1{font:clamp(34px,6vw,50px)/1.15 "Varela Round",Heebo,sans-serif;letter-spacing:-1.4px;margin:0 0 13px}h1 em{font-style:normal;color:var(--peach)}.intro{margin:0;color:#58645a;max-width:560px}
+    form{margin-top:31px;display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}label{font-size:16px;font-weight:800}.helper{font-size:13px;font-weight:500;color:#677467;margin-top:-4px}
+    input,select,textarea{width:100%;min-height:50px;padding:12px 14px;border:1px solid var(--line);border-radius:11px;background:#fff;color:var(--ink);font:inherit;transition:border-color .18s,box-shadow .18s}textarea{min-height:100px;resize:vertical}input::placeholder,textarea::placeholder{color:#9aa69b}input:focus,select:focus,textarea:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 4px #b9cfb560}
+    .submit{grid-column:1/-1;justify-self:start;min-height:52px;padding:13px 24px;border:0;border-radius:50px;background:var(--forest);color:#fff;font:800 17px Heebo,Arial,sans-serif;cursor:pointer;transition:transform .18s,background .18s}.submit:hover{background:#496748;transform:translateY(-2px)}.submit:focus-visible{outline:3px solid #e58f6a;outline-offset:3px}
+    #thanks{margin-top:28px;padding:22px;background:#e7f0e2;border-right:4px solid var(--forest);border-radius:12px}#thanks h2{margin:0 0 7px;font:24px "Varela Round",Heebo,sans-serif}#thanks p{margin:0}.note{margin:28px 0 0;font-size:13px;color:#6b776d}
+    @media(max-width:600px){.page{padding-top:22px}.box{border-radius:22px}form{grid-template-columns:1fr;gap:16px}.field.full,.submit{grid-column:auto}.submit{justify-self:stretch}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="../index.html#campaign">← חזרה לאתר הקמפיין</a>
+    <section class="box" aria-labelledby="form-title">
+      <p class="accent">מפגש היכרות פתוח</p>
+      <h1 id="form-title">שעתיים של יצירה.<br><em>הרבה יותר מזה.</em></h1>
+      <p class="intro">השאירו פרטים ונחזור אליכם עם תאריך המפגש הקרוב באזורכם. נשמח להכיר ולוודא שהפנייה מותאמת ונוחה עבורכם.</p>
+      <form onsubmit="event.preventDefault();document.getElementById('thanks').hidden=false;this.hidden=true">
+        <div class="field"><label for="full-name">שם מלא</label><input id="full-name" name="full-name" required autocomplete="name" placeholder="השם שלך"></div>
+        <div class="field"><label for="phone">טלפון</label><input id="phone" name="phone" required type="tel" autocomplete="tel" inputmode="tel" placeholder="05X-XXXXXXX"></div>
+        <div class="field"><label for="email">מייל</label><input id="email" name="email" required type="email" autocomplete="email" placeholder="name@example.com"></div>
+        <div class="field"><label for="area">אזור מגורים</label><select id="area" name="area" required><option value="" selected disabled>בחרו אזור</option><option>מרכז</option><option>שרון</option><option>ירושלים והסביבה</option><option>צפון</option><option>דרום</option><option>אחר</option></select></div>
+        <div class="field full"><label for="accessibility">האם קיימת מוגבלות כלשהי?</label><span class="helper">אם יש משהו שחשוב שנדע כדי לפנות אליכם בצורה נוחה ומותאמת, אפשר לשתף רק את מה שנוח לכם. שדה זה אינו חובה.</span><textarea id="accessibility" name="accessibility" placeholder="אפשר לכתוב כאן, אם תרצו"></textarea></div>
+        <div class="field full"><label for="interest">מה מעניין אותך?</label><select id="interest" name="interest" required><option>להתנדב במפגש</option><option>להשתתף במפגש</option><option>לשמוע על רכישה או תרומה</option></select></div>
+        <button class="submit" type="submit">אני רוצה להצטרף</button>
+      </form>
+      <div id="thanks" hidden role="status"><h2>איזה כיף, נתראה באמצע!</h2><p>הפרטים התקבלו. נחזור אליכם בהקדם עם כל מה שצריך לדעת.</p></div>
+      <p class="note">זהו דף נחיתה לדוגמה במסגרת הקמפיין; אין איסוף פרטים בפועל.</p>
+    </section>
+  </main>
+</body>
+</html>
