@@ -2,3 +2,5 @@
 .story-image img{width:100%;height:100%;display:block;object-fit:cover;object-position:right center}
 
 .brand-identity{display:flex;align-items:center;gap:9px}.brand-heart{width:42px;height:42px;overflow:hidden;position:relative;display:block;flex:0 0 42px}.brand-heart img{position:absolute;width:150px;max-width:none;height:auto;left:-52px;top:-15px;mix-blend-mode:multiply}.footer-brand{margin-bottom:12px}.footer-brand .brand-heart{width:39px;height:39px;flex-basis:39px}.footer-brand .brand-heart img{transform:scale(.93);transform-origin:top left}@media(max-width:460px){.brand-heart{width:38px;height:38px;flex-basis:38px}}
+
+.strategy-rationale{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 18px}.strategy-rationale article{padding:25px;background:#e6eedf;border-top:4px solid var(--forest)}.strategy-rationale span{font-size:13px;color:#4d6e4c;font-weight:800}.strategy-rationale h3{font-size:20px;margin:10px 0}.strategy-rationale p{font-size:15px;line-height:1.6;margin:0;color:#4f554d}@media(max-width:760px){.strategy-rationale{grid-template-columns:1fr}}
